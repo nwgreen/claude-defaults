@@ -20,6 +20,10 @@ id:
 76tghyre56yd
 ```
 
+## Terminal snippets
+- Start every terminal-bound snippet with a `cd` line into the right folder — I multi-task and won't be in the expected directory.
+- Shell is zsh: keep any inline comments zsh-safe (use `#`, never `//` or `;;` mid-line). Don't paste comments into runnable command lines if there's any doubt — put explanation outside the block.
+
 ## Linking to web destinations
 When a step is to do something on a specific webpage (e.g. "Update the IAP instructions"):
 - Include the direct deep link to that exact page whenever possible.
