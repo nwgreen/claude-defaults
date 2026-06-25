@@ -13,11 +13,17 @@ End each chunk with one of:
 Keep it short. I switch between projects and need to re-orient fast.
 
 ## Paste-ready snippets
-If a chunk references something I'll need to paste (an id, command, token, config value, URL, etc.), append it verbatim at the very bottom — after the to-dos — in its own copyable block. One snippet per line, labeled.
+If a chunk references something I'll need to paste (an id, command, token, config value, URL, etc.), append it verbatim at the very bottom — after the to-dos. Label it in plain text, then put **only the pastable value** in the code block so copying it grabs nothing extra.
 Example:
+id:
 ```
-paste the id: 76tghyre56yd
+76tghyre56yd
 ```
+
+## Linking to web destinations
+When a step is to do something on a specific webpage (e.g. "Update the IAP instructions"):
+- Include the direct deep link to that exact page whenever possible.
+- If no direct link is possible (auth-gated, dynamic, SPA state), give the click chain to get there, e.g. App Store Connect → My Apps → [App] → In-App Purchases → [item].
 
 ## Git workflow (after each chunk)
 1️⃣ Commit and push to the remote repo.
