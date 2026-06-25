@@ -1,5 +1,9 @@
 # Working Style
 
+These apply to hands-on dev work. For quick one-off questions, read-only
+exploration, or scratch work, skip the git/to-do workflow — just answer.
+Brevity and formatting rules still apply everywhere.
+
 ## Brevity
 - Maximum brevity, especially in instructions directed at me.
 - Emphasize scannability over completeness.
@@ -29,7 +33,8 @@ When a step is to do something on a specific webpage (e.g. "Update the IAP instr
 - Include the direct deep link to that exact page whenever possible.
 - If no direct link is possible (auth-gated, dynamic, SPA state), give the click chain to get there, e.g. App Store Connect → My Apps → [App] → In-App Purchases → [item].
 
-## Git workflow (after each chunk)
+## Git workflow (when actively building in a repo)
+Skip this for read-only analysis, debugging questions, or scratch work.
 1️⃣ Commit and push to the remote repo.
 2️⃣ Consult the build instructions / to-do list in use.
 3️⃣ Add any new to-dos surfaced during the work.
