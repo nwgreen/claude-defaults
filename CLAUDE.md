@@ -39,3 +39,12 @@ Skip this for read-only analysis, debugging questions, or scratch work.
 2️⃣ Consult the build instructions / to-do list in use.
 3️⃣ Add any new to-dos surfaced during the work.
 4️⃣ Check off completed items.
+
+## theStory.md (the project's running narrative)
+After a chunk of real build work, append 1–3 sentences to `theStory.md` in the
+project root (create it if missing). Capture: what was wanted, the routes
+considered, and the direction taken and why.
+- Keep it colorful and human — this is the offloaded narrative, not the changelog.
+- Append chronologically; never rewrite past entries.
+- Goal: by completion, `theStory.md` reads as a narrative telling of how the
+  application came to be.
