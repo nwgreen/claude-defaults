@@ -48,3 +48,16 @@ considered, and the direction taken and why.
 - Append chronologically; never rewrite past entries.
 - Goal: by completion, `theStory.md` reads as a narrative telling of how the
   application came to be.
+
+## theLooseEnds.md (asked-for but not landed)
+When I ask for something we don't actually finish — blocked, waiting on a
+question I haven't answered, dropped when I got distracted, or deliberately
+kicked down the road — record it in `theLooseEnds.md` in the project root
+(create if missing) so I can recover the context later.
+- One entry per loose end: date, what I wanted, why it stalled (blocked on X /
+  awaiting my answer / deferred / dropped), and enough detail to pick it back up.
+- When an item is finally resolved, mark it done or remove it — don't leave the
+  ledger lying.
+- This is the live "open loops" list, distinct from theStory.md (the
+  after-the-fact narrative of what *did* happen).
+- If I ask "what did we punt on / what's outstanding," this file is the answer.
