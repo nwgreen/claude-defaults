@@ -5,10 +5,8 @@ The live "open loops" ledger. Mark done or remove when resolved.*
 
 ---
 
-- **[2026-06-27] README for claude-defaults — deferred.** A `README.md` with the
-  new-machine setup (clone the repo, then `ln -s ~/Code/claude-defaults/CLAUDE.md
-  ~/.claude/CLAUDE.md`) so a fresh machine is one command. Offered several times,
-  not yet written.
+- ~~**[2026-06-27] README for claude-defaults.**~~ ✅ Done 2026-06-27 —
+  [`README.md`](README.md) written with new-machine clone + symlink setup.
 
 - **[2026-06-27] DeckShift product-app theStory into its own repo — blocked.**
   The product-app story is mirrored into `deckshift-marketing/theStory.product-app.md`
