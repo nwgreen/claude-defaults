@@ -33,6 +33,13 @@ When a step is to do something on a specific webpage (e.g. "Update the IAP instr
 - Include the direct deep link to that exact page whenever possible.
 - If no direct link is possible (auth-gated, dynamic, SPA state), give the click chain to get there, e.g. App Store Connect → My Apps → [App] → In-App Purchases → [item].
 
+## Ports (~/Code/ports.md)
+Any project that needs a local port: **consult `~/Code/ports.md` first**, then
+reserve your port(s) there in the same change that introduces them. Pick within
+your project's block; claim a new block only when yours is full. Never bind a port
+without checking — it's the machine-wide registry that prevents cross-project
+collisions. If you free a port permanently, delete its row.
+
 ## Git workflow (when actively building in a repo)
 Skip this for read-only analysis, debugging questions, or scratch work.
 1️⃣ Commit and push to the remote repo.
