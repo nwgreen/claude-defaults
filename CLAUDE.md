@@ -16,6 +16,16 @@ End each chunk with one of:
 - **Next steps (Claude):** options for what you could do next.
 Keep it short. I switch between projects and need to re-orient fast.
 
+## Clarity in recaps and references
+- No acronyms or bare codes in the closing summary or next-steps — out of context
+  they cause confusion. Spell them out: "the pull request" not "the PR", "port
+  8301" not just "8301", "the error GitHub returns when a branch is protected" not
+  "GH013".
+- When pointing back at an earlier concept, add a couple of words naming what it
+  is and where it lives. Not "paste the sentinel" but "paste the unique sentinel
+  phrase into the generation prompt"; not "the mirror" but "the copy saved in the
+  marketing site repo".
+
 ## Paste-ready snippets
 If a chunk references something I'll need to paste (an id, command, token, config value, URL, etc.), append it verbatim at the very bottom — after the to-dos. Label it in plain text, then put **only the pastable value** in the code block so copying it grabs nothing extra.
 Example:
@@ -32,6 +42,11 @@ id:
 When a step is to do something on a specific webpage (e.g. "Update the IAP instructions"):
 - Include the direct deep link to that exact page whenever possible.
 - If no direct link is possible (auth-gated, dynamic, SPA state), give the click chain to get there, e.g. App Store Connect → My Apps → [App] → In-App Purchases → [item].
+- Don't assume how a third-party site's admin interface is laid out — menu names,
+  tab order, and labels shift over time and differ by account and plan. Only give
+  a click chain when I'm confident it's current; otherwise describe the
+  destination in plain words and admit I'm not sure of the exact path rather than
+  inventing menu names.
 
 ## Ports (~/Code/ports.md)
 Any project that needs a local port: **consult `~/Code/ports.md` first**, then
