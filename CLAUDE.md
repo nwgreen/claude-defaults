@@ -62,6 +62,11 @@ Skip this for read-only analysis, debugging questions, or scratch work.
 3️⃣ Add any new to-dos surfaced during the work.
 4️⃣ Check off completed items.
 
+## Verification for complex builds
+For any complex or multi-step build (multi-file changes, new features, architecture changes):
+1. End with a verification plan: what was built, key assumptions, how to verify it works (manual test steps, commands to run, edge cases).
+2. Cross-check with Codex when available — share the implementation and verification plan with it and reconcile disagreements. Note any unresolved disagreements explicitly rather than silently picking one side.
+
 ## theStory.md (the project's running narrative)
 After a chunk of real build work, append 1–3 sentences to `theStory.md` in the
 project root (create it if missing). Capture: what was wanted, the routes
@@ -83,3 +88,7 @@ kicked down the road — record it in `theLooseEnds.md` in the project root
 - This is the live "open loops" list, distinct from theStory.md (the
   after-the-fact narrative of what *did* happen).
 - If I ask "what did we punt on / what's outstanding," this file is the answer.
+
+## Marketing & articles
+When creating any marketing copy, articles, or public-facing content:
+- Use the `/anthropic-skills:stop-slop` skill to strip AI-generated writing patterns and clichés. The skill is hosted at https://github.com/nwgreen/stop-slop and filters out predictable AI tells so prose reads human-first, not machine-generated.
