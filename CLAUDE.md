@@ -68,13 +68,19 @@ For any complex or multi-step build (multi-file changes, new features, architect
 2. Cross-check with Codex when available — share the implementation and verification plan with it and reconcile disagreements. Note any unresolved disagreements explicitly rather than silently picking one side.
 
 ## theStory.md (the project's running narrative)
-After a chunk of real build work, append 1–3 sentences to `theStory.md` in the
+After a chunk of real build work, add 1–3 sentences to `theStory.md` in the
 project root (create it if missing). Capture: what was wanted, the routes
 considered, and the direction taken and why.
+- Format: start each entry with its commit hash, then the narrative. Example:
+  `**a1b2c3d — The App Review grind (2026-06-24).** Redesigned contact detail...`
+- Add new entries at the **top** of the file (reverse chronological), not the bottom.
+  This eliminates merge conflicts when branches add entries in parallel — each
+  branch appends to the start, so no three-way merge collision.
 - Keep it colorful and human — this is the offloaded narrative, not the changelog.
-- Append chronologically; never rewrite past entries.
+  Never rewrite or reorder past entries.
 - Goal: by completion, `theStory.md` reads as a narrative telling of how the
-  application came to be.
+  application came to be (newest to oldest, so you scan the headline and can jump
+  to "when did we do X" by date).
 
 ## theLooseEnds.md (asked-for but not landed)
 When I ask for something we don't actually finish — blocked, waiting on a
