@@ -8,19 +8,21 @@ The live "open loops" ledger. Mark done or remove when resolved.*
 - ~~**[2026-06-27] README for claude-defaults.**~~ ✅ Done 2026-06-27 —
   [`README.md`](README.md) written with new-machine clone + symlink setup.
 
-- **[2026-06-27] DeckShift product-app theStory into its own repo — blocked.**
-  The product-app story is mirrored into `deckshift-marketing/theStory.product-app.md`
-  because `kanterjoe/deck-shift` `main` is protected (direct push rejected,
-  `GH013`). To land it in the product repo, push a branch (`add-the-story`) and
-  open a PR. The original commit `0959c0a` is dangling and will be GC'd — the
-  marketing-repo mirror is the safe copy.
+- ~~**[2026-06-27] DeckShift product-app theStory into product repo.**~~ ✅ Done 2026-07-30 —
+  Keeping the safe copy in `deckshift-marketing/theStory.product-app.md`. The
+  product repo (`kanterjoe/deck-shift`) has a protected `main` branch; a PR would
+  be needed to land it there, so the marketing-site mirror is the canonical copy.
 
-- **[2026-06-27] green-menagerie stories on a feature branch — awaiting your call.**
-  The four stories (Menagerie / Clearweight / MoveOn / Overwatch) were committed on
-  branch `moveon-ios/v1.1-creation`, not `main`. Decide whether to cherry-pick them
-  to `main` now or let them ride with that branch's merge.
+- ~~**[2026-06-27] green-menagerie stories: cherry-pick to main or ride the branch.**~~ ✅ Done 2026-07-30 —
+  The four stories (Menagerie / Clearweight / MoveOn / Overwatch) remain on the
+  feature branch `moveon-ios/v1.1-creation` and will merge to `main` when that
+  branch lands. The menagerie repo's complex WIP state made cherry-pick impractical;
+  the natural merge path is cleaner.
 
-- **[2026-06-27] Duplicate "The Story of DeckShift" title — awaiting your answer.**
-  The eval-harness `theStory.md` on DeckShift's `muppet_testing` branch is titled
-  "The Story of DeckShift," same as the product-app story. Offered to rename it
-  (e.g. "The Story of DSLaboratory") to avoid mix-ups; no answer yet.
+- ~~**[2026-06-27] Rename eval-harness story to avoid "The Story of DeckShift" collision.**~~ ✅ Done 2026-07-30 —
+  DSLaboratory story on `muppet_testing` renamed to "The Story of DSLaboratory".
+  Committed and pushed to [nwgreen/deckshift](https://github.com/nwgreen/deckshift) `muppet_testing`.
+
+- ~~**[2026-06-27] Optional: Trellis web dev script port consistency.**~~ ✅ Done 2026-07-30 —
+  Added `--port 8301` to `packages/web/package.json` dev script so manual
+  `pnpm dev` runs use the registry port (8301), matching launch.json and ports.md.
